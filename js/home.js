@@ -12,4 +12,20 @@ document.getElementById('Add-Money-button').addEventListener('click', function (
     else {
         alert('incaret info wrong');
     }
+});
+document.getElementById('Cash-Out-button').addEventListener('click', function (event) {
+    event.preventDefault();
+    const CashOutAmount = document.getElementById('Cash-Out-Amount').value;
+    const CashOutPin = document.getElementById('Cash-Out-Pin').value;
+    if (CashOutPin === '1234') {
+        const AvailableBalanceCashOut = document.getElementById('Available-Balance').innerText;
+        const myManeBalanceCashOut = parseFloat(AvailableBalanceCashOut);
+        const CashOutAmountBalance = parseFloat(CashOutAmount)
+        const newBalanceMinas = myManeBalanceCashOut - CashOutAmountBalance
+        document.getElementById('Available-Balance').innerText = newBalanceMinas;
+    }
+    else {
+        alert('incaret info wrong')
+    }
+
 })

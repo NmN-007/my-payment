@@ -32,7 +32,7 @@
                     </div>
                     <div class="divider divider-primary"></div>
                     <!-- Add Money & Cash Out Form -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl bg-teal-700">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl bg-teal-700">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -48,6 +48,26 @@
                             </div>
                             <div class="form-control mt-6">
                                 <button id="Add-Money-button" class="btn btn-primary">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Cash Out Form -->
+                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl bg-teal-700">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input type="text" id="Cash-Out-Amount" placeholder="Amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input type="password" id="Cash-Out-Pin" placeholder="Pin" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="Cash-Out-button" class="btn btn-primary">Cash Out</button>
                             </div>
                         </form>
                     </div>
