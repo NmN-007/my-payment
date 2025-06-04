@@ -28,4 +28,13 @@ document.getElementById('Cash-Out-button').addEventListener('click', function (e
         alert('incaret info wrong')
     }
 
-})
+});
+document.getElementById('Cash-Out-onle').addEventListener('click', function () {
+    document.getElementById('Cash-Out-form').classList.remove('hidden');
+    document.getElementById('Add-Money-form').classList.add('hidden');
+});
+document.getElementById('Add-Money').addEventListener('click', function () {
+document.getElementById('Cash-Out-form').classList.add('hidden');
+    document.getElementById('Add-Money-form').classList.remove('hidden');
+
+});
